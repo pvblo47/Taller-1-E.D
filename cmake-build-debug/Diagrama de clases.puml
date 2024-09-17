@@ -24,7 +24,7 @@ class Solicitudes {
 
 + solicitudes(puntos: int;ciudad: String)
 + getPuntos(): int
-+ getCiuda(): String
++ getCiudad(): String
 }
 
 class Proyectos {

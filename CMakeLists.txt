@@ -7,4 +7,10 @@ add_executable(Taller_E_Datos main.cpp
         Node.cpp
         Node.h
         LinkedList.cpp
-        LinkedList.h)
+        LinkedList.h
+        Estructura.cpp
+        Estructura.h
+        Dificultad.cpp
+        Dificultad.h
+        Solicitudes.cpp
+        Solicitudes.h)
