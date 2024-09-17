@@ -1,0 +1,77 @@
+@startuml
+
+left to right direction
+skin rose
+
+abstract Estructura{
+
+- nickname: String
+- fecha: String
+- descripcion: String
+- dificultad: DIFICULTAD
+
++estructura(nickname: String,dificultad: DIFICULTAD,fecha: String,Descripcion: String)
++ getNickname(): String
++ getFecha(): String
++ getDescripcion(): String
++ getDificultad(): DIFICULTAD
+
+}
+class Solicitudes {
+
+- puntos: int
+- ciudad: String
+
++ solicitudes(puntos: int;ciudad: String)
++ getPuntos(): int
++ getCiuda(): String
+}
+
+class Proyectos {
+
+- id: String
+- finalizado: Boolean
+
++ proyectos(id: String, finalizado: Boolean)
++ getId(): String
++ getFinalizado(): Boolean
+}
+
+class buildTheEarthImpl {
+
+buildTheEarthImpl()
+
+}
+
+interface buildTheEarth{
+
++ aceptarSolicitud(): Proyectos
++ rechazarSolicitud(): Proyectos
++ siguienteSolictud(): Proyectos
++ filtroFinalizado(): Proyectos
++ filtroAñoSeleccion(): Proyectos
++ filtroMesSeleccion(): Proyectos
++ filtroPorNick(): Proyectos
++ filtroPorDificultad(): Proyectos
++ VolverEvaluacion(nickname: String): void
++ PorcentajesDeDificultad(): void
++ UsuariosMasAceptaciones(): void
++ MasUtilizacionDeFiltro(): void
++ GuardarProyecto(): void
+
+}
+
+
+Estructura <|-- Solicitudes
+Estructura <|-- Proyectos
+buildTheEarth <|.. buildTheEarthImpl
+Solicitudes --> buildTheEarthImpl
+Proyectos --> buildTheEarthImpl
+
+
+
+
+}
+
+
+@enduml
