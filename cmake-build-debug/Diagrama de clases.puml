@@ -17,22 +17,22 @@ abstract Estructura{
 + getDificultad(): DIFICULTAD
 
 }
-class Solicitudes {
+class Solicitud {
 
 - puntos: int
 - ciudad: String
 
-+ solicitudes(puntos: int;ciudad: String)
++ solicitud(puntos: int;ciudad: String)
 + getPuntos(): int
 + getCiudad(): String
 }
 
-class Proyectos {
+class Proyecto {
 
 - id: String
 - finalizado: Boolean
 
-+ proyectos(id: String, finalizado: Boolean)
++ proyecto(id: String, finalizado: Boolean)
 + getId(): String
 + getFinalizado(): Boolean
 }
@@ -65,8 +65,8 @@ interface buildTheEarth{
 Estructura <|-- Solicitudes
 Estructura <|-- Proyectos
 buildTheEarth <|.. buildTheEarthImpl
-Solicitudes --> buildTheEarthImpl
-Proyectos --> buildTheEarthImpl
+Solicitud --> buildTheEarthImpl
+Proyecto --> buildTheEarthImpl
 
 
 

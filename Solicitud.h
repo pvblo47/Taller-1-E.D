@@ -7,17 +7,17 @@
 #include "Estructura.h"
 
 
-class Solicitudes: public Estructura{
+class Solicitud: public Estructura{
 
 
 public:
-    Solicitudes(std::string nickname, std::string fecha,std::string descripcion, Dificultad dificultad, int puntos, std::string ciudad);
+    Solicitud(std::string nickname, std::string fecha,std::string descripcion, Dificultad dificultad, int puntos, std::string ciudad);
 
-    [[nodiscard]] int getPuntos() const {
+    [[nodiscard]] int getPuntos()  {
         return puntos;
     }
 
-    [[nodiscard]] std::string getCiudad() const {
+    [[nodiscard]] std::string getCiudad()  {
         return ciudad;
     }
 
