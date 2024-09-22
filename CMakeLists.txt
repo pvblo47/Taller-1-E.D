@@ -15,4 +15,5 @@ add_executable(Taller_E_Datos main.cpp
         Solicitud.cpp
         Solicitud.h
         Proyecto.cpp
-        Proyecto.h)
+        Proyecto.h
+        BuildTheEarth.h)

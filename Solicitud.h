@@ -13,11 +13,11 @@ class Solicitud: public Estructura{
 public:
     Solicitud(std::string nickname, std::string fecha,std::string descripcion, Dificultad dificultad, int puntos, std::string ciudad);
 
-    [[nodiscard]] int getPuntos()  {
+    [[nodiscard]] int getPuntos()const  {
         return puntos;
     }
 
-    [[nodiscard]] std::string getCiudad()  {
+    [[nodiscard]] std::string getCiudad()  const{
         return ciudad;
     }
 

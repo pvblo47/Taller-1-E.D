@@ -64,16 +64,16 @@ build CMakeFiles/Taller_E_Datos.dir/main.cpp.obj: CXX_COMPILER__Taller_E_Datos_s
   OBJECT_FILE_DIR = CMakeFiles\Taller_E_Datos.dir
   dyndep = CMakeFiles/Taller_E_Datos.dir/CXX.dd
 
-build CMakeFiles/Taller_E_Datos.dir/Node.cpp.obj.ddi: CXX_SCAN__Taller_E_Datos_Debug C$:/Users/ulloc/Downloads/Taller$ E_Datos/Taller$ E_Datos/Node.cpp || cmake_object_order_depends_target_Taller_E_Datos
-  DEP_FILE = CMakeFiles\Taller_E_Datos.dir\Node.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Taller_E_Datos.dir\Node.cpp.obj.ddi
+build CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj.ddi: CXX_SCAN__Taller_E_Datos_Debug C$:/Users/ulloc/Downloads/Taller$ E_Datos/Taller$ E_Datos/ListaSolicitudes.cpp || cmake_object_order_depends_target_Taller_E_Datos
+  DEP_FILE = CMakeFiles\Taller_E_Datos.dir\ListaSolicitudes.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Taller_E_Datos.dir\ListaSolicitudes.cpp.obj.ddi
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJ_FILE = CMakeFiles\Taller_E_Datos.dir\Node.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Taller_E_Datos.dir\Node.cpp.obj.ddi.i
+  OBJ_FILE = CMakeFiles\Taller_E_Datos.dir\ListaSolicitudes.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Taller_E_Datos.dir\ListaSolicitudes.cpp.obj.ddi.i
 
-build CMakeFiles/Taller_E_Datos.dir/Node.cpp.obj: CXX_COMPILER__Taller_E_Datos_scanned_Debug C$:/Users/ulloc/Downloads/Taller$ E_Datos/Taller$ E_Datos/Node.cpp | CMakeFiles/Taller_E_Datos.dir/Node.cpp.obj.modmap || cmake_object_order_depends_target_Taller_E_Datos CMakeFiles/Taller_E_Datos.dir/CXX.dd
-  DEP_FILE = CMakeFiles\Taller_E_Datos.dir\Node.cpp.obj.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Taller_E_Datos.dir\Node.cpp.obj.modmap
+build CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj: CXX_COMPILER__Taller_E_Datos_scanned_Debug C$:/Users/ulloc/Downloads/Taller$ E_Datos/Taller$ E_Datos/ListaSolicitudes.cpp | CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj.modmap || cmake_object_order_depends_target_Taller_E_Datos CMakeFiles/Taller_E_Datos.dir/CXX.dd
+  DEP_FILE = CMakeFiles\Taller_E_Datos.dir\ListaSolicitudes.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Taller_E_Datos.dir\ListaSolicitudes.cpp.obj.modmap
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Taller_E_Datos.dir
   OBJECT_FILE_DIR = CMakeFiles\Taller_E_Datos.dir
@@ -124,16 +124,16 @@ build CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj: CXX_COMPILER__Taller_E_D
   OBJECT_FILE_DIR = CMakeFiles\Taller_E_Datos.dir
   dyndep = CMakeFiles/Taller_E_Datos.dir/CXX.dd
 
-build CMakeFiles/Taller_E_Datos.dir/Solicitudes.cpp.obj.ddi: CXX_SCAN__Taller_E_Datos_Debug C$:/Users/ulloc/Downloads/Taller$ E_Datos/Taller$ E_Datos/Solicitudes.cpp || cmake_object_order_depends_target_Taller_E_Datos
-  DEP_FILE = CMakeFiles\Taller_E_Datos.dir\Solicitudes.cpp.obj.ddi.d
-  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Taller_E_Datos.dir\Solicitudes.cpp.obj.ddi
+build CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj.ddi: CXX_SCAN__Taller_E_Datos_Debug C$:/Users/ulloc/Downloads/Taller$ E_Datos/Taller$ E_Datos/Solicitud.cpp || cmake_object_order_depends_target_Taller_E_Datos
+  DEP_FILE = CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.obj.ddi
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  OBJ_FILE = CMakeFiles\Taller_E_Datos.dir\Solicitudes.cpp.obj
-  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Taller_E_Datos.dir\Solicitudes.cpp.obj.ddi.i
+  OBJ_FILE = CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.obj.ddi.i
 
-build CMakeFiles/Taller_E_Datos.dir/Solicitudes.cpp.obj: CXX_COMPILER__Taller_E_Datos_scanned_Debug C$:/Users/ulloc/Downloads/Taller$ E_Datos/Taller$ E_Datos/Solicitudes.cpp | CMakeFiles/Taller_E_Datos.dir/Solicitudes.cpp.obj.modmap || cmake_object_order_depends_target_Taller_E_Datos CMakeFiles/Taller_E_Datos.dir/CXX.dd
-  DEP_FILE = CMakeFiles\Taller_E_Datos.dir\Solicitudes.cpp.obj.d
-  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Taller_E_Datos.dir\Solicitudes.cpp.obj.modmap
+build CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj: CXX_COMPILER__Taller_E_Datos_scanned_Debug C$:/Users/ulloc/Downloads/Taller$ E_Datos/Taller$ E_Datos/Solicitud.cpp | CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj.modmap || cmake_object_order_depends_target_Taller_E_Datos CMakeFiles/Taller_E_Datos.dir/CXX.dd
+  DEP_FILE = CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.obj.modmap
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Taller_E_Datos.dir
   OBJECT_FILE_DIR = CMakeFiles\Taller_E_Datos.dir
@@ -154,7 +154,7 @@ build CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj: CXX_COMPILER__Taller_E_Dat
   OBJECT_FILE_DIR = CMakeFiles\Taller_E_Datos.dir
   dyndep = CMakeFiles/Taller_E_Datos.dir/CXX.dd
 
-build CMakeFiles/Taller_E_Datos.dir/CXX.dd | C$:/Users/ulloc/Downloads/Taller$ E_Datos/Taller$ E_Datos/cmake-build-debug/CMakeFiles/Taller_E_Datos.dir/CXXModules.json CMakeFiles/Taller_E_Datos.dir/main.cpp.obj.modmap CMakeFiles/Taller_E_Datos.dir/Node.cpp.obj.modmap CMakeFiles/Taller_E_Datos.dir/LinkedList.cpp.obj.modmap CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj.modmap CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj.modmap CMakeFiles/Taller_E_Datos.dir/Solicitudes.cpp.obj.modmap CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj.modmap: CXX_DYNDEP__Taller_E_Datos_Debug CMakeFiles/Taller_E_Datos.dir/main.cpp.obj.ddi CMakeFiles/Taller_E_Datos.dir/Node.cpp.obj.ddi CMakeFiles/Taller_E_Datos.dir/LinkedList.cpp.obj.ddi CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj.ddi CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj.ddi CMakeFiles/Taller_E_Datos.dir/Solicitudes.cpp.obj.ddi CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj.ddi | C$:/Users/ulloc/Downloads/Taller$ E_Datos/Taller$ E_Datos/cmake-build-debug/CMakeFiles/Taller_E_Datos.dir/CXXDependInfo.json
+build CMakeFiles/Taller_E_Datos.dir/CXX.dd | C$:/Users/ulloc/Downloads/Taller$ E_Datos/Taller$ E_Datos/cmake-build-debug/CMakeFiles/Taller_E_Datos.dir/CXXModules.json CMakeFiles/Taller_E_Datos.dir/main.cpp.obj.modmap CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj.modmap CMakeFiles/Taller_E_Datos.dir/LinkedList.cpp.obj.modmap CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj.modmap CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj.modmap CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj.modmap CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj.modmap: CXX_DYNDEP__Taller_E_Datos_Debug CMakeFiles/Taller_E_Datos.dir/main.cpp.obj.ddi CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj.ddi CMakeFiles/Taller_E_Datos.dir/LinkedList.cpp.obj.ddi CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj.ddi CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj.ddi CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj.ddi CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj.ddi | C$:/Users/ulloc/Downloads/Taller$ E_Datos/Taller$ E_Datos/cmake-build-debug/CMakeFiles/Taller_E_Datos.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -164,7 +164,7 @@ build CMakeFiles/Taller_E_Datos.dir/CXX.dd | C$:/Users/ulloc/Downloads/Taller$ E
 #############################################
 # Link the executable Taller_E_Datos.exe
 
-build Taller_E_Datos.exe: CXX_EXECUTABLE_LINKER__Taller_E_Datos_Debug CMakeFiles/Taller_E_Datos.dir/main.cpp.obj CMakeFiles/Taller_E_Datos.dir/Node.cpp.obj CMakeFiles/Taller_E_Datos.dir/LinkedList.cpp.obj CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj CMakeFiles/Taller_E_Datos.dir/Solicitudes.cpp.obj CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj
+build Taller_E_Datos.exe: CXX_EXECUTABLE_LINKER__Taller_E_Datos_Debug CMakeFiles/Taller_E_Datos.dir/main.cpp.obj CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj CMakeFiles/Taller_E_Datos.dir/LinkedList.cpp.obj CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Taller_E_Datos.dir

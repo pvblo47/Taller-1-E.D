@@ -16,12 +16,17 @@ struct Nodo {
     // Constructor del nodo que inicializa con una solicitud
     Nodo(const Solicitud& solicitud) : solicitud(solicitud), next(nullptr) {}
 
+
+
 };
 // Clase que maneja la lista enlazada de solicitudes
 class ListaSolicitudes {
 
+public:
+    [[nodiscard]] Nodo * getHead() const {
+        return head;
+    }
 
-    public:
     // Constructor que inicializa la lista vacía
     ListaSolicitudes() : head(nullptr), cola(nullptr) {}
 
@@ -56,8 +61,36 @@ class ListaSolicitudes {
             return;
         }
 
+        const Solicitud& solicitud = head->solicitud;
+
+        std::cout << "Nickname: " << solicitud.getNickname() << std::endl;
+        std::cout << "Dificultad: " << solicitud.getDificultad() << std::endl;
+        std::cout << "Puntos: " << solicitud.getPuntos() << std::endl;
+        std::cout << "Descripción: " << solicitud.getDescripcion() << std::endl;
+        // CALCULAR DIAS
+
     }
 
+    // Eliminar la primera solicitud en la lista
+
+    void eliminarPrimeraSolicitud() {
+        if (!head) {
+            return; // No hay nada que eliminar
+        }
+        Nodo* nodoEliminar = head;
+        head = head->next; // Ahora la cabeza es el siguiente
+        delete nodoEliminar; //Se elimina el nodo seleccionado al inicio
+
+        // Si se eliminó el único nodo, actualizar la cola a nullptr
+        if (!head){
+        cola = nullptr;
+        }
+    }
+
+    // Verificar si la lista está vacía
+    bool estaVacia() const {
+        return head == nullptr; //Si esta vacía retorna True
+    }
 
     private:
     Nodo* head;

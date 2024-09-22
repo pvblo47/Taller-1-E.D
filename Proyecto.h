@@ -12,11 +12,11 @@ class Proyecto: public Estructura{
 public:
     Proyecto(std::string nickname, std::string fecha,std::string descripcion, Dificultad dificultad, std::string id, bool finalizado );
 
-    [[nodiscard]] std::string getID()  {
+    [[nodiscard]] std::string getID() const {
         return id;
     }
 
-    [[nodiscard]] bool getFinalizado() {
+    [[nodiscard]] bool getFinalizado() const {
         return finalizado;
     }
 
