@@ -16,19 +16,19 @@ class  Estructura {
 public:    // Constructor
     Estructura(std::string nickname, std::string fecha,std::string descripcion, Dificultad dificultad);
 
-    [[nodiscard]] std::string GetNickname() const {
+    [[nodiscard]] std::string getNickname() const {
         return nickname;
     }
 
-    [[nodiscard]] std::string GetFecha() const {
+    [[nodiscard]] std::string getFecha() const {
         return fecha;
     }
 
-    [[nodiscard]] std::string GetDescripcion() const {
+    [[nodiscard]] std::string getDescripcion() const {
         return descripcion;
     }
 
-    [[nodiscard]] Dificultad GetDificultad() const {
+    [[nodiscard]] Dificultad getDificultad() const {
         return dificultad;
     }
 
