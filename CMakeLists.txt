@@ -4,10 +4,6 @@ project(Taller_E_Datos)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Taller_E_Datos main.cpp
-        ListaSolicitudes.cpp
-        ListaSolicitudes.h
-        LinkedList.cpp
-        LinkedList.h
         Estructura.cpp
         Estructura.h
         Dificultad.cpp
@@ -16,4 +12,5 @@ add_executable(Taller_E_Datos main.cpp
         Solicitud.h
         Proyecto.cpp
         Proyecto.h
-        BuildTheEarth.h)
+        BuildTheEarth.h
+        BuildTheEarth.cpp)

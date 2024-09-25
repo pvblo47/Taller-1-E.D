@@ -6,6 +6,8 @@
 #define BUILDTHEEARTH_H
 #include <string>
 
+#include "Proyecto.h"
+
 
 class BuildTheEarth{
 
