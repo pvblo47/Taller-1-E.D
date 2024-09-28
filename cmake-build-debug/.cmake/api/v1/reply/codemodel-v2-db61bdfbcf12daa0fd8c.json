@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Taller_E_Datos::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Taller_E_Datos-Debug-89046ae0c2409316c491.json",
+					"jsonFile" : "target-Taller_E_Datos-Debug-469cf51563d3ec92c285.json",
 					"name" : "Taller_E_Datos",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Gabriel Briones/Desktop/taller/Taller-1-E.D/Taller-1-E.D/cmake-build-debug",
-		"source" : "C:/Users/Gabriel Briones/Desktop/taller/Taller-1-E.D/Taller-1-E.D"
+		"build" : "C:/Users/Gabriel Briones/Desktop/Taller/Taller-1-E.D/cmake-build-debug",
+		"source" : "C:/Users/Gabriel Briones/Desktop/Taller/Taller-1-E.D"
 	},
 	"version" : 
 	{

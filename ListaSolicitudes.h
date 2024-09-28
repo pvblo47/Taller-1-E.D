@@ -1,11 +1,15 @@
 //
 // Created by ulloc on 17-09-2024.
 //
-
+#define LISTASOLICITUDES_H
 #ifndef NODE_H
 #define NODE_H
 #include <iostream>
+#include <sstream>
+#include <random>
 
+
+#include "Proyecto.h"
 #include "Solicitud.h"
 
 // Nodo de la lista enlazada
@@ -27,6 +31,8 @@ public:
         return head;
     }
 
+
+
     // Constructor que inicializa la lista vacía
     ListaSolicitudes() : head(nullptr), cola(nullptr) {}
 
@@ -42,60 +48,31 @@ public:
     }
 
     // Metodo para insertar una solicitud al final de la lista
-    void addSolicitud(const Solicitud& nuevaSolicitud) {
+    void addSolicitud(const Solicitud& nuevaSolicitud);
 
-        Nodo* nuevoNodo = new Nodo(nuevaSolicitud); // Nuevo nodo con la solicitud
-        if (!head) { // Si la lista está vacía
-            head = nuevoNodo; // El nuevo nodo es la cabeza
-            cola = nuevoNodo; // también la cola
-        } else { // Si ya hay nodos en la lista
-            cola->next = nuevoNodo;// Enlazar el último nodo con el nuevo nodo
-            cola = nuevoNodo;  // Actualizar la cola al nuevo nodo
-        }
-    }
-
-    // Metodo para mostrar la solicitud
-    void mostrarPrimeraSolicitud() const {
-        if (!head) { // Verificar si la lista está vacía
-            std::cout << "No hay solicitudes en la lista." << std::endl;
-            return;
-        }
-
-        const Solicitud& solicitud = head->solicitud;
-
-        std::cout << "Nickname: " << solicitud.getNickname() << std::endl;
-        std::cout << "Dificultad: " << solicitud.getDificultad() << std::endl;
-        std::cout << "Puntos: " << solicitud.getPuntos() << std::endl;
-        std::cout << "Descripción: " << solicitud.getDescripcion() << std::endl;
-        // CALCULAR DIAS
-
-    }
+    // Metodo para mostrar la solicitud actual
+    void mostrarSolicitudActual() const;
 
     // Eliminar la primera solicitud en la lista
-
-    void eliminarPrimeraSolicitud() {
-        if (!head) {
-            return; // No hay nada que eliminar
-        }
-        Nodo* nodoEliminar = head;
-        head = head->next; // Ahora la cabeza es el siguiente
-        delete nodoEliminar; //Se elimina el nodo seleccionado al inicio
-
-        // Si se eliminó el único nodo, actualizar la cola a nullptr
-        if (!head){
-        cola = nullptr;
-        }
-    }
+    void eliminarPrimeraSolicitud();
 
     // Verificar si la lista está vacía
-    bool estaVacia() const {
-        return head == nullptr; //Si esta vacía retorna True
-    }
+    bool estaVacia() const;
+
+    // Metodo para reiniciar la lista al inicio
+    void reiniciarLista();
+
+    // Metodo para mostrar la siguiente solicitud en la lista
+    void mostrarSiguienteSolicitud();
+
+    // Metodo para gestionar las solicitudes
+    void gestionarSolicitudes(std::vector<Proyecto>& proyectos);
+
 
     private:
-    Nodo* head;
-    Nodo* cola;
-
+    Nodo* head;        // Puntero a la cabeza de la lista
+    Nodo* cola;        // Puntero a la cola de la lista
+    Nodo* nodoActual;  // Puntero para rastrear la solicitud actual
 
 
 

@@ -11,7 +11,7 @@ class Solicitud: public Estructura{
 
 
 public:
-    Solicitud(std::string nickname, std::string fecha,std::string descripcion, Dificultad dificultad, int puntos, std::string ciudad);
+    Solicitud(std::string nickname, std::string fecha,std::string descripcion, std::string dificultad, int puntos, std::string ciudad);
 
     [[nodiscard]] int getPuntos()const  {
         return puntos;

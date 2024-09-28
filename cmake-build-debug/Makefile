@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.ex
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D"
+CMAKE_SOURCE_DIR = "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug\CMakeFiles" "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\CMakeFiles" "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ Taller_E_Datos/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_E_Datos.dir\build.make CMakeFiles/Taller_E_Datos.dir/build
 .PHONY : Taller_E_Datos/fast
 
+ArregloDinamico.obj: ArregloDinamico.cpp.obj
+.PHONY : ArregloDinamico.obj
+
+# target to build an object file
+ArregloDinamico.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_E_Datos.dir\build.make CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.obj
+.PHONY : ArregloDinamico.cpp.obj
+
+ArregloDinamico.i: ArregloDinamico.cpp.i
+.PHONY : ArregloDinamico.i
+
+# target to preprocess a source file
+ArregloDinamico.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_E_Datos.dir\build.make CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.i
+.PHONY : ArregloDinamico.cpp.i
+
+ArregloDinamico.s: ArregloDinamico.cpp.s
+.PHONY : ArregloDinamico.s
+
+# target to generate assembly for a file
+ArregloDinamico.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_E_Datos.dir\build.make CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.s
+.PHONY : ArregloDinamico.cpp.s
+
 BuildTheEarth.obj: BuildTheEarth.cpp.obj
 .PHONY : BuildTheEarth.obj
 
@@ -152,30 +176,6 @@ BuildTheEarth.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_E_Datos.dir\build.make CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.s
 .PHONY : BuildTheEarth.cpp.s
 
-Dificultad.obj: Dificultad.cpp.obj
-.PHONY : Dificultad.obj
-
-# target to build an object file
-Dificultad.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_E_Datos.dir\build.make CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj
-.PHONY : Dificultad.cpp.obj
-
-Dificultad.i: Dificultad.cpp.i
-.PHONY : Dificultad.i
-
-# target to preprocess a source file
-Dificultad.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_E_Datos.dir\build.make CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.i
-.PHONY : Dificultad.cpp.i
-
-Dificultad.s: Dificultad.cpp.s
-.PHONY : Dificultad.s
-
-# target to generate assembly for a file
-Dificultad.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_E_Datos.dir\build.make CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.s
-.PHONY : Dificultad.cpp.s
-
 Estructura.obj: Estructura.cpp.obj
 .PHONY : Estructura.obj
 
@@ -199,6 +199,30 @@ Estructura.s: Estructura.cpp.s
 Estructura.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_E_Datos.dir\build.make CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.s
 .PHONY : Estructura.cpp.s
+
+ListaSolicitudes.obj: ListaSolicitudes.cpp.obj
+.PHONY : ListaSolicitudes.obj
+
+# target to build an object file
+ListaSolicitudes.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_E_Datos.dir\build.make CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj
+.PHONY : ListaSolicitudes.cpp.obj
+
+ListaSolicitudes.i: ListaSolicitudes.cpp.i
+.PHONY : ListaSolicitudes.i
+
+# target to preprocess a source file
+ListaSolicitudes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_E_Datos.dir\build.make CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.i
+.PHONY : ListaSolicitudes.cpp.i
+
+ListaSolicitudes.s: ListaSolicitudes.cpp.s
+.PHONY : ListaSolicitudes.s
+
+# target to generate assembly for a file
+ListaSolicitudes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller_E_Datos.dir\build.make CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.s
+.PHONY : ListaSolicitudes.cpp.s
 
 Proyecto.obj: Proyecto.cpp.obj
 .PHONY : Proyecto.obj
@@ -281,15 +305,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Taller_E_Datos
+	@echo ... ArregloDinamico.obj
+	@echo ... ArregloDinamico.i
+	@echo ... ArregloDinamico.s
 	@echo ... BuildTheEarth.obj
 	@echo ... BuildTheEarth.i
 	@echo ... BuildTheEarth.s
-	@echo ... Dificultad.obj
-	@echo ... Dificultad.i
-	@echo ... Dificultad.s
 	@echo ... Estructura.obj
 	@echo ... Estructura.i
 	@echo ... Estructura.s
+	@echo ... ListaSolicitudes.obj
+	@echo ... ListaSolicitudes.i
+	@echo ... ListaSolicitudes.s
 	@echo ... Proyecto.obj
 	@echo ... Proyecto.i
 	@echo ... Proyecto.s

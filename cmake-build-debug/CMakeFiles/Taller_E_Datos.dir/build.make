@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.ex
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D"
+CMAKE_SOURCE_DIR = "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Taller_E_Datos.dir/depend.make
@@ -69,112 +69,128 @@ include CMakeFiles/Taller_E_Datos.dir/progress.make
 include CMakeFiles/Taller_E_Datos.dir/flags.make
 
 CMakeFiles/Taller_E_Datos.dir/main.cpp.obj: CMakeFiles/Taller_E_Datos.dir/flags.make
-CMakeFiles/Taller_E_Datos.dir/main.cpp.obj: C:/Users/Gabriel\ Briones/Desktop/taller/Taller-1-E.D/Taller-1-E.D/main.cpp
+CMakeFiles/Taller_E_Datos.dir/main.cpp.obj: C:/Users/Gabriel\ Briones/Desktop/Taller/Taller-1-E.D/main.cpp
 CMakeFiles/Taller_E_Datos.dir/main.cpp.obj: CMakeFiles/Taller_E_Datos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Taller_E_Datos.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller_E_Datos.dir/main.cpp.obj -MF CMakeFiles\Taller_E_Datos.dir\main.cpp.obj.d -o CMakeFiles\Taller_E_Datos.dir\main.cpp.obj -c "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Taller_E_Datos.dir/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller_E_Datos.dir/main.cpp.obj -MF CMakeFiles\Taller_E_Datos.dir\main.cpp.obj.d -o CMakeFiles\Taller_E_Datos.dir\main.cpp.obj -c "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\main.cpp"
 
 CMakeFiles/Taller_E_Datos.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller_E_Datos.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\main.cpp" > CMakeFiles\Taller_E_Datos.dir\main.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\main.cpp" > CMakeFiles\Taller_E_Datos.dir\main.cpp.i
 
 CMakeFiles/Taller_E_Datos.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller_E_Datos.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\main.cpp" -o CMakeFiles\Taller_E_Datos.dir\main.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\main.cpp" -o CMakeFiles\Taller_E_Datos.dir\main.cpp.s
 
 CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj: CMakeFiles/Taller_E_Datos.dir/flags.make
-CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj: C:/Users/Gabriel\ Briones/Desktop/taller/Taller-1-E.D/Taller-1-E.D/Estructura.cpp
+CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj: C:/Users/Gabriel\ Briones/Desktop/Taller/Taller-1-E.D/Estructura.cpp
 CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj: CMakeFiles/Taller_E_Datos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj -MF CMakeFiles\Taller_E_Datos.dir\Estructura.cpp.obj.d -o CMakeFiles\Taller_E_Datos.dir\Estructura.cpp.obj -c "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\Estructura.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj -MF CMakeFiles\Taller_E_Datos.dir\Estructura.cpp.obj.d -o CMakeFiles\Taller_E_Datos.dir\Estructura.cpp.obj -c "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Estructura.cpp"
 
 CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\Estructura.cpp" > CMakeFiles\Taller_E_Datos.dir\Estructura.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Estructura.cpp" > CMakeFiles\Taller_E_Datos.dir\Estructura.cpp.i
 
 CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\Estructura.cpp" -o CMakeFiles\Taller_E_Datos.dir\Estructura.cpp.s
-
-CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj: CMakeFiles/Taller_E_Datos.dir/flags.make
-CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj: C:/Users/Gabriel\ Briones/Desktop/taller/Taller-1-E.D/Taller-1-E.D/Dificultad.cpp
-CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj: CMakeFiles/Taller_E_Datos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj -MF CMakeFiles\Taller_E_Datos.dir\Dificultad.cpp.obj.d -o CMakeFiles\Taller_E_Datos.dir\Dificultad.cpp.obj -c "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\Dificultad.cpp"
-
-CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\Dificultad.cpp" > CMakeFiles\Taller_E_Datos.dir\Dificultad.cpp.i
-
-CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\Dificultad.cpp" -o CMakeFiles\Taller_E_Datos.dir\Dificultad.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Estructura.cpp" -o CMakeFiles\Taller_E_Datos.dir\Estructura.cpp.s
 
 CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj: CMakeFiles/Taller_E_Datos.dir/flags.make
-CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj: C:/Users/Gabriel\ Briones/Desktop/taller/Taller-1-E.D/Taller-1-E.D/Solicitud.cpp
+CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj: C:/Users/Gabriel\ Briones/Desktop/Taller/Taller-1-E.D/Solicitud.cpp
 CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj: CMakeFiles/Taller_E_Datos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj -MF CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.obj.d -o CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.obj -c "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\Solicitud.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj -MF CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.obj.d -o CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.obj -c "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Solicitud.cpp"
 
 CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\Solicitud.cpp" > CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Solicitud.cpp" > CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.i
 
 CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\Solicitud.cpp" -o CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Solicitud.cpp" -o CMakeFiles\Taller_E_Datos.dir\Solicitud.cpp.s
 
 CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj: CMakeFiles/Taller_E_Datos.dir/flags.make
-CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj: C:/Users/Gabriel\ Briones/Desktop/taller/Taller-1-E.D/Taller-1-E.D/Proyecto.cpp
+CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj: C:/Users/Gabriel\ Briones/Desktop/Taller/Taller-1-E.D/Proyecto.cpp
 CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj: CMakeFiles/Taller_E_Datos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj -MF CMakeFiles\Taller_E_Datos.dir\Proyecto.cpp.obj.d -o CMakeFiles\Taller_E_Datos.dir\Proyecto.cpp.obj -c "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\Proyecto.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj -MF CMakeFiles\Taller_E_Datos.dir\Proyecto.cpp.obj.d -o CMakeFiles\Taller_E_Datos.dir\Proyecto.cpp.obj -c "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Proyecto.cpp"
 
 CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\Proyecto.cpp" > CMakeFiles\Taller_E_Datos.dir\Proyecto.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Proyecto.cpp" > CMakeFiles\Taller_E_Datos.dir\Proyecto.cpp.i
 
 CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\Proyecto.cpp" -o CMakeFiles\Taller_E_Datos.dir\Proyecto.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Proyecto.cpp" -o CMakeFiles\Taller_E_Datos.dir\Proyecto.cpp.s
 
 CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.obj: CMakeFiles/Taller_E_Datos.dir/flags.make
-CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.obj: C:/Users/Gabriel\ Briones/Desktop/taller/Taller-1-E.D/Taller-1-E.D/BuildTheEarth.cpp
+CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.obj: C:/Users/Gabriel\ Briones/Desktop/Taller/Taller-1-E.D/BuildTheEarth.cpp
 CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.obj: CMakeFiles/Taller_E_Datos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.obj -MF CMakeFiles\Taller_E_Datos.dir\BuildTheEarth.cpp.obj.d -o CMakeFiles\Taller_E_Datos.dir\BuildTheEarth.cpp.obj -c "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\BuildTheEarth.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.obj -MF CMakeFiles\Taller_E_Datos.dir\BuildTheEarth.cpp.obj.d -o CMakeFiles\Taller_E_Datos.dir\BuildTheEarth.cpp.obj -c "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\BuildTheEarth.cpp"
 
 CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\BuildTheEarth.cpp" > CMakeFiles\Taller_E_Datos.dir\BuildTheEarth.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\BuildTheEarth.cpp" > CMakeFiles\Taller_E_Datos.dir\BuildTheEarth.cpp.i
 
 CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\BuildTheEarth.cpp" -o CMakeFiles\Taller_E_Datos.dir\BuildTheEarth.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\BuildTheEarth.cpp" -o CMakeFiles\Taller_E_Datos.dir\BuildTheEarth.cpp.s
+
+CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.obj: CMakeFiles/Taller_E_Datos.dir/flags.make
+CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.obj: C:/Users/Gabriel\ Briones/Desktop/Taller/Taller-1-E.D/ArregloDinamico.cpp
+CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.obj: CMakeFiles/Taller_E_Datos.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.obj -MF CMakeFiles\Taller_E_Datos.dir\ArregloDinamico.cpp.obj.d -o CMakeFiles\Taller_E_Datos.dir\ArregloDinamico.cpp.obj -c "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\ArregloDinamico.cpp"
+
+CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\ArregloDinamico.cpp" > CMakeFiles\Taller_E_Datos.dir\ArregloDinamico.cpp.i
+
+CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\ArregloDinamico.cpp" -o CMakeFiles\Taller_E_Datos.dir\ArregloDinamico.cpp.s
+
+CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj: CMakeFiles/Taller_E_Datos.dir/flags.make
+CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj: C:/Users/Gabriel\ Briones/Desktop/Taller/Taller-1-E.D/ListaSolicitudes.cpp
+CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj: CMakeFiles/Taller_E_Datos.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj -MF CMakeFiles\Taller_E_Datos.dir\ListaSolicitudes.cpp.obj.d -o CMakeFiles\Taller_E_Datos.dir\ListaSolicitudes.cpp.obj -c "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\ListaSolicitudes.cpp"
+
+CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\ListaSolicitudes.cpp" > CMakeFiles\Taller_E_Datos.dir\ListaSolicitudes.cpp.i
+
+CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\ListaSolicitudes.cpp" -o CMakeFiles\Taller_E_Datos.dir\ListaSolicitudes.cpp.s
 
 # Object files for target Taller_E_Datos
 Taller_E_Datos_OBJECTS = \
 "CMakeFiles/Taller_E_Datos.dir/main.cpp.obj" \
 "CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj" \
-"CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj" \
 "CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj" \
 "CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj" \
-"CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.obj"
+"CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.obj" \
+"CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.obj" \
+"CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj"
 
 # External object files for target Taller_E_Datos
 Taller_E_Datos_EXTERNAL_OBJECTS =
 
 Taller_E_Datos.exe: CMakeFiles/Taller_E_Datos.dir/main.cpp.obj
 Taller_E_Datos.exe: CMakeFiles/Taller_E_Datos.dir/Estructura.cpp.obj
-Taller_E_Datos.exe: CMakeFiles/Taller_E_Datos.dir/Dificultad.cpp.obj
 Taller_E_Datos.exe: CMakeFiles/Taller_E_Datos.dir/Solicitud.cpp.obj
 Taller_E_Datos.exe: CMakeFiles/Taller_E_Datos.dir/Proyecto.cpp.obj
 Taller_E_Datos.exe: CMakeFiles/Taller_E_Datos.dir/BuildTheEarth.cpp.obj
+Taller_E_Datos.exe: CMakeFiles/Taller_E_Datos.dir/ArregloDinamico.cpp.obj
+Taller_E_Datos.exe: CMakeFiles/Taller_E_Datos.dir/ListaSolicitudes.cpp.obj
 Taller_E_Datos.exe: CMakeFiles/Taller_E_Datos.dir/build.make
 Taller_E_Datos.exe: CMakeFiles/Taller_E_Datos.dir/linkLibs.rsp
 Taller_E_Datos.exe: CMakeFiles/Taller_E_Datos.dir/objects1.rsp
 Taller_E_Datos.exe: CMakeFiles/Taller_E_Datos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Taller_E_Datos.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Taller_E_Datos.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Taller_E_Datos.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -186,6 +202,6 @@ CMakeFiles/Taller_E_Datos.dir/clean:
 .PHONY : CMakeFiles/Taller_E_Datos.dir/clean
 
 CMakeFiles/Taller_E_Datos.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D" "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D" "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug" "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug" "C:\Users\Gabriel Briones\Desktop\taller\Taller-1-E.D\Taller-1-E.D\cmake-build-debug\CMakeFiles\Taller_E_Datos.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D" "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D" "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug" "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug" "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\CMakeFiles\Taller_E_Datos.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/Taller_E_Datos.dir/depend
 

@@ -5,6 +5,6 @@
 #include "Proyecto.h"
 
 
-Proyecto::Proyecto(std::string nickname, std::string fecha, std::string descripcion, Dificultad dificultad, std::string id, bool finalizado): Estructura(nickname, fecha, descripcion, dificultad),id(id),
+Proyecto::Proyecto(std::string nickname, std::string fecha, std::string descripcion, std::string dificultad, std::string id, bool finalizado): Estructura(nickname, fecha, descripcion, dificultad),id(id),
       finalizado(finalizado) {
 }

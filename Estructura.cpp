@@ -6,7 +6,7 @@
 
 
 // Implementación del constructor
-Estructura::Estructura(std::string nickname, std::string fecha, std::string descripcion, Dificultad dificultad)
-    : nickname(std::move(nickname)), fecha(std::move(fecha)), descripcion(std::move(descripcion)), dificultad(dificultad) {
+Estructura::Estructura(std::string nickname, std::string fecha, std::string descripcion, std::string dificultad)
+    : nickname(std::move(nickname)), fecha(std::move(fecha)), descripcion(std::move(descripcion)), dificultad(std::string(dificultad)) {
 
 }

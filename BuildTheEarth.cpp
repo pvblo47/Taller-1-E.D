@@ -11,7 +11,38 @@
 #include "Solicitud.h"
 
 void menu() {
- std::cout<<"1. Add Earth"<<std::endl;
+    int opcion;
+    do {
+        std::cout << "\nMenú Principal:\n";
+        std::cout << "1. Revisar Solicitudes\n";
+        std::cout << "2. Búsqueda de Proyectos\n";
+        std::cout << "3. Volver a Evaluar el Proyecto\n";
+        std::cout << "4. Estadísticas\n";
+        std::cout << "5. Salir\n";
+        std::cout << "Seleccione una opción: ";
+        std::cin >> opcion;
+
+        switch (opcion) {
+            case 1:
+                lista.gestionarSolicitudes(proyectos);
+            break;
+            case 2:
+                // Lógica para búsqueda de proyectos
+                    break;
+            case 3:
+                // Lógica para volver a evaluar el proyecto
+                    break;
+            case 4:
+                // Lógica para estadísticas
+                    break;
+            case 5:
+                std::cout << "Saliendo del programa...\n";
+            break;
+            default:
+                std::cout << "Opción no válida. Intente de nuevo.\n";
+            break;
+        }
+    } while (opcion != 5);
 
 }
 
@@ -21,7 +52,7 @@ BuildTheEarth::BuildTheEarth() {
 
 }
 
-void leerArchivo(){
+void leerArchivosolicitudes(){
 
     std::fstream file("solicitudes.csv");
 
@@ -49,33 +80,46 @@ void leerArchivo(){
             std::getline(ss, descripcion,';');
 
             int puntos = std::stoi(puntosStr);
-            auto dificultad = static_cast<Dificultad>(std::stoi(dificultadStr));;
 
-            Solicitud *solicitud1 = new Solicitud(nickname, fecha, descripcion, dificultad, puntos, ciudad);
+            Solicitud *solicitud = new Solicitud(nickname, fecha, descripcion, dificultadStr, puntos, ciudad);
                 
         }
 
     }
 
-    std::fstream file1("solicitudes.csv");
+    std::fstream file1("proyectos.csv");
 
     if (file1.fail()) {
         std::cout << "Error opening file"<<"\n";
         exit(1);
     }
 
-    std::string line1;
-    while (file1.good()) {
-        std::getline(file1, line1);
-        std::string new_line;
-        std::stringstream input_ss(line1);
-        while (std::getline(input_ss, new_line, ';')) {
+    while (std::getline(file, line)) {
+        std::stringstream ss(line);
+        std::string id;
+        std::string nickname;
+        std::string fecha;
+        std::string descripcion;
+        std::string dificultad;
+        std::string finalizado;
 
+        std::getline(ss, id,';');
+        std::getline(ss, nickname,';');
+        std::getline(ss, fecha,';');
+        std::getline(ss, dificultad,';');
+        std::getline(ss, finalizado,';');
+
+        bool finalizadoBool;
+        if(finalizado == "Si") {
+            finalizadoBool = true;
         }
+        else {
+            finalizadoBool = false;
+        }
+
+        Proyecto *proyecto = new Proyecto(id, nickname, fecha, descripcion, dificultad, finalizadoBool);
     }
-
 }
-
 
 
 /*
@@ -86,7 +130,7 @@ Proyecto aceptarSolicitud() {
 Proyecto rechazarSolicitud() {
     return;
 }
-Proyecto siguienteSolicitud() {
+Proyecto siguienteSolicitud(){
     return;
 }
 Proyecto filtroFinalizado() {
@@ -103,7 +147,8 @@ Proyecto filtroPorNick() {
 }
 Proyecto filtroPorDificultad() {
     return;
-}*/
+}
+*/
 void volverEvaluacion(std::string nickname) {
 
 }

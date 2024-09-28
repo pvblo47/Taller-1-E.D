@@ -6,11 +6,12 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(Taller_E_Datos main.cpp
         Estructura.cpp
         Estructura.h
-        Dificultad.cpp
-        Dificultad.h
         Solicitud.cpp
         Solicitud.h
         Proyecto.cpp
         Proyecto.h
         BuildTheEarth.h
-        BuildTheEarth.cpp)
+        BuildTheEarth.cpp
+        ArregloDinamico.cpp
+        ArregloDinamico.h
+        ListaSolicitudes.cpp)

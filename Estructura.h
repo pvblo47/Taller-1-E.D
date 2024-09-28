@@ -6,7 +6,7 @@
 #define ESTRUCTURA_H
 #include <string>
 
-#include "Dificultad.h"
+
 
 
 class  Estructura {
@@ -14,7 +14,7 @@ class  Estructura {
 
 
 public:    // Constructor
-    Estructura(std::string nickname, std::string fecha,std::string descripcion, Dificultad dificultad);
+    Estructura(std::string nickname, std::string fecha,std::string descripcion, std::string dificultad);
 
     [[nodiscard]] std::string getNickname() const {
         return nickname;
@@ -28,15 +28,17 @@ public:    // Constructor
         return descripcion;
     }
 
-    [[nodiscard]] Dificultad getDificultad() const {
+    [[nodiscard]] std::string getDificultad() const {
         return dificultad;
     }
+
+    bool operator==(const Estructura & estructura) const = default;
 
 private:
     std::string nickname;
     std::string fecha;
     std::string descripcion;
-    Dificultad dificultad;
+    std::string dificultad;
 
 
 
