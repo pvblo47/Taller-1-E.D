@@ -6,9 +6,12 @@
 
 #include <fstream>
 #include <iostream>
-#include <sstream>
 
-#include "Solicitud.h"
+
+#include "ArregloDinamico.h"
+#include "ListaSolicitudes.h"
+ListaSolicitudes listaSolicitudes;
+ArregloDinamico proyectos;
 
 void menu() {
     int opcion;
@@ -24,7 +27,8 @@ void menu() {
 
         switch (opcion) {
             case 1:
-                lista.gestionarSolicitudes(proyectos);
+                listaSolicitudes.gestionarSolicitudes(proyectos);
+
             break;
             case 2:
                 // Lógica para búsqueda de proyectos
@@ -46,80 +50,24 @@ void menu() {
 
 }
 
+
+
 BuildTheEarth::BuildTheEarth() {
+
+   // proyectos.leerArchivoProyectos();
+    listaSolicitudes.leerArchivoSolicitudes();
 
     menu();
 
+
+
+
+
+
 }
 
-void leerArchivosolicitudes(){
 
-    std::fstream file("solicitudes.csv");
 
-    if (file.fail()) {
-        std::cout << "Error opening file"<<"\n";
-        exit(1);
-    }
-
-    std::string line;
-    while (file.good()) {
-        while (std::getline(file, line)) {
-            std::stringstream ss(line);
-            std::string nickname;
-            std::string dificultadStr;
-            std::string puntosStr;
-            std::string fecha;
-            std::string ciudad;
-            std::string descripcion;
-
-            std::getline(ss, nickname,';');
-            std::getline(ss, dificultadStr,';');
-            std::getline(ss, puntosStr,';');
-            std::getline(ss, fecha,';');
-            std::getline(ss, ciudad,';');
-            std::getline(ss, descripcion,';');
-
-            int puntos = std::stoi(puntosStr);
-
-            Solicitud *solicitud = new Solicitud(nickname, fecha, descripcion, dificultadStr, puntos, ciudad);
-                
-        }
-
-    }
-
-    std::fstream file1("proyectos.csv");
-
-    if (file1.fail()) {
-        std::cout << "Error opening file"<<"\n";
-        exit(1);
-    }
-
-    while (std::getline(file, line)) {
-        std::stringstream ss(line);
-        std::string id;
-        std::string nickname;
-        std::string fecha;
-        std::string descripcion;
-        std::string dificultad;
-        std::string finalizado;
-
-        std::getline(ss, id,';');
-        std::getline(ss, nickname,';');
-        std::getline(ss, fecha,';');
-        std::getline(ss, dificultad,';');
-        std::getline(ss, finalizado,';');
-
-        bool finalizadoBool;
-        if(finalizado == "Si") {
-            finalizadoBool = true;
-        }
-        else {
-            finalizadoBool = false;
-        }
-
-        Proyecto *proyecto = new Proyecto(id, nickname, fecha, descripcion, dificultad, finalizadoBool);
-    }
-}
 
 
 /*

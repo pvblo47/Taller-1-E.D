@@ -6,6 +6,8 @@
 #define BUILDTHEEARTH_H
 #include <string>
 
+#include "ArregloDinamico.h"
+#include "ListaSolicitudes.h"
 #include "Proyecto.h"
 
 
@@ -15,6 +17,7 @@ class BuildTheEarth{
 
 public:
     BuildTheEarth();
+
 
     Proyecto aceptarSolicitud();
     Proyecto rechazarSolicitud();
@@ -29,7 +32,7 @@ public:
     void usuariosMasAceptaciones();
     void masUtilizacionDeFiltro();
 
-
+private:
 
 };
 

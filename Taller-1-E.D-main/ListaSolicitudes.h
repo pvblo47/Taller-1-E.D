@@ -2,6 +2,7 @@
 // Created by ulloc on 17-09-2024.
 //
 #define LISTASOLICITUDES_H
+#include "ArregloDinamico.h"
 #ifndef NODE_H
 #define NODE_H
 #include <iostream>
@@ -34,7 +35,7 @@ public:
 
 
     // Constructor que inicializa la lista vacía
-    ListaSolicitudes() : head(nullptr), cola(nullptr) {}
+    ListaSolicitudes() : head(nullptr), cola(nullptr),nodoActual(nullptr){}
 
     // Destructor para liberar la memoria de todos los nodos (por si acaso)
     ~ListaSolicitudes() {
@@ -49,6 +50,8 @@ public:
 
     // Metodo para insertar una solicitud al final de la lista
     void addSolicitud(const Solicitud& nuevaSolicitud);
+
+    int cantidadSolicitudes() const;
 
     // Metodo para mostrar la solicitud actual
     void mostrarSolicitudActual() const;
@@ -66,7 +69,14 @@ public:
     void mostrarSiguienteSolicitud();
 
     // Metodo para gestionar las solicitudes
-    void gestionarSolicitudes(std::vector<Proyecto>& proyectos);
+    void gestionarSolicitudes(ArregloDinamico& proyectos);
+
+    void leerArchivoSolicitudes();
+
+    // Metodo para leer el Archivo de Solicitudes
+    void LeerArchivoSolicitudes();
+
+
 
 
     private:

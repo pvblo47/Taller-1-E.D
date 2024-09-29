@@ -17,6 +17,7 @@ public:
     void insertar(Proyecto data,int index);
     void expandir();
     void shrink();
+    void leerArchivoProyectos();
 
 
 private:

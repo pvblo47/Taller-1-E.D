@@ -7,7 +7,7 @@
 
 int main() {
 
-    BuildTheEarth build_the_earth;
+    BuildTheEarth build_the_earth; // Crea instancia del sistema
 
 
 

@@ -6,8 +6,10 @@
 #include <sstream>
 #include <bits/random.h> // Para generar Ids Aleatorios
 #include <ctime>
+#include <fstream>
 #include <iomanip>
 
+#include "ArregloDinamico.h"
 #include "Proyecto.h"
 
 // Metodo para generar un ID aleatorio de 6 letras mayúsculas
@@ -43,8 +45,17 @@ void ListaSolicitudes::addSolicitud(const Solicitud& nuevaSolicitud) {
         cola = nuevoNodo;  // Actualizar la cola al nuevo nodo
     }
 }
-
+int ListaSolicitudes::cantidadSolicitudes() const {
+    int count = 0;
+    Nodo* current = this->head; // Suponiendo que tienes un puntero a la cabeza de la lista
+    while (current) {
+        count++;
+        current = current->next; // Avanza al siguiente nodo
+    }
+    return count;
+}
 void ListaSolicitudes::mostrarSolicitudActual() const {
+    std::cout << "Número de solicitudes: " << this->cantidadSolicitudes() << std::endl;
     if (!nodoActual) {  // Verifica si hay una solicitud actual
         std::cout << "No hay solicitudes en la lista o ya no hay más solicitudes." << std::endl;
         return;
@@ -94,9 +105,13 @@ void ListaSolicitudes::mostrarSiguienteSolicitud() {
     mostrarSolicitudActual();  // Mostrar la solicitud actual
 }
 // Metodo que crea un submenú para gestionar las soliciutedes
-void ListaSolicitudes::gestionarSolicitudes(std::vector<Proyecto>& proyectos) {
+void ListaSolicitudes::gestionarSolicitudes(ArregloDinamico&  proyectos) {
+    nodoActual = head; // Iniciar con el primer nodo
     // Usa "this" para acceder a los métodos de la instancia actual
     while (!this->estaVacia()) {
+
+        mostrarSolicitudActual();
+
         // Mostrar opciones del submenú
         std::cout << "\nOpciones:" << std::endl;
         std::cout << "1. Aceptar solicitud" << std::endl;
@@ -109,18 +124,19 @@ void ListaSolicitudes::gestionarSolicitudes(std::vector<Proyecto>& proyectos) {
         std::cin >> opcion;
 
         switch (opcion) {
-            case 1: {
-                if (this->getHead()) { // Se asegura de que haya una solicitud
-                    const Solicitud& solicitud = this->getHead()->solicitud; // Usa "this"
+            case 1: { // Aceptar solicitud
+                if (nodoActual) { // Se asegura de que haya una solicitud
+                    const Solicitud& solicitud =nodoActual->solicitud; // Usa "this"
                     std::string id = generarIDAleatorio(); // Genera un ID
                     std::string fechaActual = obtenerFechaActual(); // Obtiene la fecha actual
 
                     // Crea y agrega un nuevo proyecto al vector
                     Proyecto nuevoProyecto(solicitud.getNickname(), fechaActual, solicitud.getDescripcion(), solicitud.getDificultad(), id, false);
-                    proyectos.push_back(nuevoProyecto); // Agrega el proyecto al vector
+                    proyectos.agregar(nuevoProyecto);
 
                     std::cout << "Solicitud aceptada y convertida en proyecto." << std::endl;
                     this->eliminarPrimeraSolicitud(); // Elimina la solicitud
+                    nodoActual = head; // Actualiza nodoActual al siguiente nodo
                 } else {
                     std::cout << "No hay solicitudes en la lista." << std::endl;
                 }
@@ -161,4 +177,82 @@ void ListaSolicitudes::gestionarSolicitudes(std::vector<Proyecto>& proyectos) {
     }
     std::cout << "No hay más solicitudes que gestionar. Intente más tarde." << std::endl;
 }
+
+void ListaSolicitudes::leerArchivoSolicitudes() {
+    std::fstream file("solicitudes.csv");
+
+    if (file.fail()) {
+        std::cout << "Error opening file" << "\n";
+        return; // Cambia exit(1) a return
+    }
+
+    std::string line;
+    while (std::getline(file, line)) {
+        if (line.empty()) {
+            continue; // Ignora líneas vacías
+        }
+
+        std::cout << "Leyendo línea: " << line << std::endl; // Línea de depuración
+        std::stringstream ss(line);
+        std::string nickname;
+        std::string dificultadStr;
+        std::string puntosStr;
+        std::string fecha;
+        std::string ciudad;
+        std::string descripcion;
+
+        // Leer los datos del archivo
+        std::getline(ss, nickname, ';');
+        std::getline(ss, dificultadStr, ';');
+        std::getline(ss, puntosStr, ';');
+        std::getline(ss, fecha, ';');
+        std::getline(ss, ciudad, ';');
+        std::getline(ss, descripcion, ';');
+
+        // Validar que puntosStr no esté vacío antes de convertir
+        if (puntosStr.empty()) {
+            std::cout << "Puntos no válidos para la solicitud: " << line << std::endl;
+            continue; // Saltar esta línea si puntosStr está vacío
+        }
+
+        // Intentar convertir puntosStr a int y manejar posibles errores
+        int puntos;
+        try {
+            puntos = std::stoi(puntosStr);
+        } catch (const std::invalid_argument& e) {
+            std::cout << "Error convirtiendo puntos: '" << puntosStr << "' en la línea: " << line << std::endl;
+            continue; // Saltar esta línea si hay un error en la conversión
+        } catch (const std::out_of_range& e) {
+            std::cout << "Número fuera de rango en la línea: " << line << std::endl;
+            continue; // Manejo adicional para el rango
+        }
+
+        Solicitud solicitud(nickname, fecha, descripcion, dificultadStr, puntos, ciudad);
+        addSolicitud(solicitud);
+        std::cout << "Solicitud añadida: " << solicitud.getNickname() << std::endl; // Asegúrate de que esto imprima correctamente
+    }
+}
+   // void RevertirUnProyecto() {
+
+     //   std::string idProyecto;
+       // std::cout << "Ingrese el ID del proyecto que desea volver a evaluar: ";
+  //      std::cin >> idProyecto;
+
+//        bool encontrado = false;  // Booleano para verificar si encontramos el proyecto
+
+        // Búsqueda del proyecto por ID
+        //for (size_t i = 0; i < proyectos.size(); ++i) {
+    //        if (proyectos[i].getID() == idProyecto) {  // Asumiendo que `getID()` devuelve el ID del proyecto
+                // Reconstruir la solicitud a partir del proyecto
+      //          Solicitud nuevaSolicitud(
+        //            proyectos[i].getNickname(),
+          //          proyectos[i].getFecha(),
+            //        proyectos[i].getDescripcion(),
+              //      proyectos[i].getDificultad(),
+                //    proyectos[i].getPuntos(),
+                  //  "CiudadDesconocida"  // Ajusta esto si tienes una ciudad disponible
+       //         );
+//}
+
+
 
