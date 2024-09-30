@@ -14,28 +14,22 @@ ListaSolicitudes listaSolicitudes;
 ArregloDinamico proyectos;
 
 
-void filtroFinalizado(ArregloDinamico lista) {
-    Proyecto* proyecto;
-    for(int i= 0; i < lista.getAmount();i++ ) {
-        proyecto = lista[i];
-    }
-    return proyecto;
-}
 
 void menuDeFiltro() {
     int opcion;
     do {
-        std::cout<<"Menu de filtro"<<std::endl;
-        std::cout<<"Filtro proyecto finalizado"<<std::endl;
-        std::cout<<"Filtro proyecto por año ingresado"<<std::endl;
-        std::cout<<"Filtro proyecto por mes ingresado"<<std::endl;
-        std::cout<<"Filtro proyecto por nickname ingresado"<<std::endl;
-        std::cout<<"Filtro proyecto por dificultad"<<std::endl;
-        std::cout<<"Volver al menu principal"<<std::endl;
+        std::cout<<"-------------- Menu de filtro --------------"<<std::endl;
+        std::cout<<"[1]Filtro proyecto finalizado"<<std::endl;
+        std::cout<<"[2]Filtro proyecto por año ingresado"<<std::endl;
+        std::cout<<"[3]Filtro proyecto por mes ingresado"<<std::endl;
+        std::cout<<"[4]Filtro proyecto por nickname ingresado"<<std::endl;
+        std::cout<<"[5]Filtro proyecto por dificultad"<<std::endl;
+        std::cout<<"[6]Volver al menu principal"<<std::endl;
         std::cin >> opcion;
         switch (opcion) {
 
             case 1:
+                proyectos.filtroPorFinalización();
 
                 break;
         }
@@ -63,7 +57,6 @@ void menu(){
             case 2:
                 // Lógica para búsqueda de proyectos
                 menuDeFiltro();
-                filtroFinalizado(proyectos);
             break;
             case 3:
                 // Lógica para volver a evaluar el proyecto

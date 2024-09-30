@@ -58,6 +58,43 @@ int ArregloDinamico::obtenerPosicion(const Proyecto& data) {
     return -1;
 }
 
+std::string cambioDeDificultad(Proyecto proyecto) {
+    if (proyecto.getDificultad() == "PRINCIPIANTE") {
+        return "O";
+    }
+    if (proyecto.getDificultad() == "FACIL") {
+        return "OO";
+    }
+    if (proyecto.getDificultad() == "INTERMEDIO") {
+        return "OOO";
+    }
+    if (proyecto.getDificultad() == "DIFICIL") {
+        return "OOOO";
+    }
+    if (proyecto.getDificultad() == "MUY_DIFICIL") {
+        return "OOOOO";
+    }
+
+
+}
+
+void ArregloDinamico::filtroPorFinalización() {
+    std::cout<< "------------------Proyectos Encontrados-----------------" << std::endl;
+    for (int i = 0; i < this->amount; i++) {
+        Proyecto proyecto = arr[i];
+        if(proyecto.getFinalizado()==true) {
+            std::cout<< "-----------------------------------------------" << std::endl;
+            std::cout<< "Nickname: " << proyecto.getNickname() << std::endl;
+            std::cout<< "Proyecto: " << (cambioDeDificultad(proyecto)) << std::endl;
+            //std::cout<< "Proyecto: " << proyecto.getSemanas() << std::endl;//
+            std::cout<< "Proyecto: " << proyecto.getDescripcion() << std::endl;
+            std::cout<< "-----------------------------------------------" << std::endl;
+        }
+
+    }
+
+}
+
 void ArregloDinamico::insertar(Proyecto data, int index) {
     if(index<0||index>this->amount) {
         return;
