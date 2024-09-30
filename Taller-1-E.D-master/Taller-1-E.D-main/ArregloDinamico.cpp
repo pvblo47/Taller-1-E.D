@@ -8,7 +8,6 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
-#include <stdlib.h>
 
 #include "Proyecto.h"
 #include "Solicitud.h"
@@ -26,6 +25,7 @@ ArregloDinamico::ArregloDinamico() {
 ArregloDinamico::~ArregloDinamico() {
     delete[] this->arr;
 }
+
 
 void ArregloDinamico::agregar(Proyecto data) {
     if (this->amount == this->size) {
@@ -90,6 +90,11 @@ void ArregloDinamico::expandir() {
     this->size *= 2;
 }
 
+int ArregloDinamico::getAmount() {
+    return this->amount;
+}
+
+
 void ArregloDinamico::leerArchivoProyectos() {
     std::ifstream file1("proyectos.csv");
 
@@ -105,7 +110,6 @@ void ArregloDinamico::leerArchivoProyectos() {
             continue; // Ignora líneas vacías
         }
 
-        std::cout << "Leyendo línea: " << line << std::endl;
         std::stringstream ss(line);
         std::string id, nickname, fecha, descripcion, dificultad, finalizado;
 
@@ -118,7 +122,6 @@ void ArregloDinamico::leerArchivoProyectos() {
 
         // Verifica que todos los campos estén llenos
         if (id.empty() || nickname.empty() || fecha.empty() || descripcion.empty() || dificultad.empty() || finalizado.empty()) {
-            std::cout << "Línea incompleta encontrada, saltando: " << line << std::endl;
             continue;
         }
 

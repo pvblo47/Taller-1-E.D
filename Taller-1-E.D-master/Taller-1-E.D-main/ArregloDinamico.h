@@ -12,6 +12,7 @@ class ArregloDinamico {
 public:
     ArregloDinamico();
     ~ArregloDinamico();
+    int getAmount();
     void agregar(Proyecto data);
     void eliminar(int index);
     int obtenerPosicion(const Proyecto &data);

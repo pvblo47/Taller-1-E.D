@@ -18,10 +18,6 @@ class BuildTheEarth{
 public:
     BuildTheEarth();
 
-
-    Proyecto aceptarSolicitud();
-    Proyecto rechazarSolicitud();
-    Proyecto siguienteSolicitud();
     Proyecto filtroFinalizado();
     Proyecto filtroAñoSeleccion();
     Proyecto filtroMesSeleccion();

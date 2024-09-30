@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2024.2.0.1\bin\cmake\win\x64\bin\cmake.ex
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D"
+CMAKE_SOURCE_DIR = "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Taller-1-E.D-master\Taller-1-E.D-main"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Taller-1-E.D-master\Taller-1-E.D-main\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\CMakeFiles" "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Taller-1-E.D-master\Taller-1-E.D-main\cmake-build-debug\CMakeFiles" "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Taller-1-E.D-master\Taller-1-E.D-main\cmake-build-debug\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Gabriel Briones\Desktop\Taller\Taller-1-E.D\Taller-1-E.D-master\Taller-1-E.D-main\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

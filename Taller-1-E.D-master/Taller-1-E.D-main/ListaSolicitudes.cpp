@@ -124,7 +124,7 @@ void ListaSolicitudes::gestionarSolicitudes(ArregloDinamico&  proyectos) {
         std::cout << "2. Rechazar solicitud" << std::endl;
         std::cout << "3. Siguiente solicitud" << std::endl;
         std::cout << "4. Salir" << std::endl;
-        std::cout << "Seleccione una opción: ";
+        std::cout << "Seleccione una opcion: ";
 
         int opcion;
         std::cin >> opcion;
@@ -198,7 +198,6 @@ void ListaSolicitudes::leerArchivoSolicitudes() {
             continue; // Ignora líneas vacías
         }
 
-        std::cout << "Leyendo línea: " << line << std::endl; // Línea de depuración
         std::stringstream ss(line);
         std::string nickname;
         std::string dificultadStr;
@@ -235,6 +234,5 @@ void ListaSolicitudes::leerArchivoSolicitudes() {
 
         Solicitud solicitud(nickname, fecha, descripcion, dificultadStr, puntos, ciudad);
         addSolicitud(solicitud);
-        std::cout << "Solicitud añadida: " << solicitud.getNickname() << std::endl; // Asegúrate de que esto imprima correctamente
     }
 }

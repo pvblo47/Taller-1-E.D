@@ -13,16 +13,46 @@
 ListaSolicitudes listaSolicitudes;
 ArregloDinamico proyectos;
 
-void menu() {
+
+void filtroFinalizado(ArregloDinamico lista) {
+    Proyecto* proyecto;
+    for(int i= 0; i < lista.getAmount();i++ ) {
+        proyecto = lista[i];
+    }
+    return proyecto;
+}
+
+void menuDeFiltro() {
     int opcion;
     do {
-        std::cout << "\nMenú Principal:\n";
+        std::cout<<"Menu de filtro"<<std::endl;
+        std::cout<<"Filtro proyecto finalizado"<<std::endl;
+        std::cout<<"Filtro proyecto por año ingresado"<<std::endl;
+        std::cout<<"Filtro proyecto por mes ingresado"<<std::endl;
+        std::cout<<"Filtro proyecto por nickname ingresado"<<std::endl;
+        std::cout<<"Filtro proyecto por dificultad"<<std::endl;
+        std::cout<<"Volver al menu principal"<<std::endl;
+        std::cin >> opcion;
+        switch (opcion) {
+
+            case 1:
+
+                break;
+        }
+    } while (opcion != 6);
+
+}
+
+void menu(){
+    int opcion;
+    do {
+        std::cout << "\nMenu Principal:\n";
         std::cout << "1. Revisar Solicitudes\n";
-        std::cout << "2. Búsqueda de Proyectos\n";
+        std::cout << "2. Busqueda de Proyectos\n";
         std::cout << "3. Volver a Evaluar el Proyecto\n";
-        std::cout << "4. Estadísticas\n";
+        std::cout << "4. Estadisticas\n";
         std::cout << "5. Salir\n";
-        std::cout << "Seleccione una opción: ";
+        std::cout << "Seleccione una opcion: ";
         std::cin >> opcion;
 
         switch (opcion) {
@@ -32,9 +62,12 @@ void menu() {
             break;
             case 2:
                 // Lógica para búsqueda de proyectos
-                    break;
+                menuDeFiltro();
+                filtroFinalizado(proyectos);
+            break;
             case 3:
                 // Lógica para volver a evaluar el proyecto
+
                     break;
             case 4:
                 // Lógica para estadísticas
@@ -49,41 +82,16 @@ void menu() {
     } while (opcion != 5);
 
 }
-
-
-
 BuildTheEarth::BuildTheEarth() {
-
     proyectos.leerArchivoProyectos();
     listaSolicitudes.leerArchivoSolicitudes();
 
     menu();
-
-
-
-
-
-
 }
-
-
 
 
 
 /*
-Proyecto aceptarSolicitud() {
-    return;
-}
-
-Proyecto rechazarSolicitud() {
-    return;
-}
-Proyecto siguienteSolicitud(){
-    return;
-}
-Proyecto filtroFinalizado() {
-    return;
-}
 Proyecto filtroAñoSeleccion() {
     return;
 }
