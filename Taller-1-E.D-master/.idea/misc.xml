@@ -10,10 +10,14 @@
     <option name="pythonIntegrationState" value="YES" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/Taller-1-E.D-master/Taller-1-E.D-main">
 =======
   <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/Taller-1-E.D-main">
 >>>>>>> 39a2e0241c393531025493caf6842cf290db7c54
+=======
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/Taller-1-E.D-main">
+>>>>>>> 68335047b7c25a6b2483b4656360b1fda4938709
     <contentRoot DIR="$PROJECT_DIR$" />
   </component>
 </project>

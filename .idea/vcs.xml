@@ -2,5 +2,12 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    <mapping directory="$PROJECT_DIR$/Taller-1-E.D-main/Taller-1-E.D" vcs="Git" />
+>>>>>>> 39a2e0241c393531025493caf6842cf290db7c54
+>>>>>>> 68335047b7c25a6b2483b4656360b1fda4938709
   </component>
 </project>
